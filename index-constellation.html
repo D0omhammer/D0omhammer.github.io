@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>Cubesquad</title>
+        <meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Madeon08">
+
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+
+	<body>
+
+		<!-- Page preloader -->
+		<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<!-- Overlay -->
+		<div class="global-overlay">
+
+			<canvas id="constellationel"></canvas>
+
+			<div class="overlay">
+
+				<!-- Lines Overlay -->
+				<div class="overlay-dash"></div>
+
+			</div>
+		</div>
+
+		<!-- START - Home Part -->
+		<section id="home-wrap">
+
+			<!-- Stars Overlay - Uncomment the next 3 lines to activate the effect-->
+			<!-- <div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div> -->
+
+			<div class="content">
+
+				<!-- Your logo -->
+				<img src="img/logo.png" alt="" class="brand-logo text-intro opacity-0" />
+
+				<h1 class="text-intro opacity-0"><span class="polyfy-title">Si, nosotros lo hacemos</span></h1>
+
+				<p class="text-intro opacity-0">Seguramente alguien te recomendó esta página, y eso debe ser porque lo que buscas puede no ser muy "Cool".<br>
+					Pero Keep calm, lo haremos por ti. Primero conoce un poco acerca de nosotros para poder continuar.</p>
+
+				<a href="#" id="open-more-info" data-target="info-wrap" class="light-btn text-intro opacity-0">Okay, continuemos</a>
+
+				<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">¡Únete a nosotros!</a>
+
+			</div> <!-- /. content -->
+
+			<!-- Social icons -->
+			<div class="social-icons text-intro opacity-0">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+
+			</div> <!-- /. social-icons -->
+
+		</section>
+		<!-- END - Home Part -->
+
+		<!-- START - More Informations Part -->
+		<section id="info-wrap">
+
+			<div class="hero">
+
+				<div class="center-text">
+
+					<img src="img/logo2.png" height="10%":>
+
+					<p>Holi, <strong>CubeSquad</strong> es un equipo de personas que se juntaron para poder brindar esos servicios que todo el munndo quiere pedir a un geek, pero que seguramente no sabes cómo o solamente no sabías a quién.</p>
+					<p><strong>Nosotros lo haremos</strong>, solamente llena el formulario que se encuentra más abajo y alguien de nuestro team se contactará contigo para cuadrar los detalles necesarios.</p>
+					<p><strong>NO</strong> somos tu fuente de consultas.</p>
+					<p><strong>NO</strong> nos responsabilizamos por lo que pase después.</p>
+					<p><strong>NO</strong> revelaremos tu identidad a menos que lo quieras así.</p>
+					<p><strong>Somos un grupo de profesionales, no cualquier wannabe </strong></p>
+
+				</div> <!-- /. center-text -->
+
+			</div> <!-- /. hero -->
+
+			<div class="dark-hero">
+
+				<div class="center-text">
+
+					<h3 class="lighty">¡Contáctanos!</h3>
+
+					<div class="info-contact row">
+
+		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+		                    <div class="contact-item"><i class="icon ion-ios-telephone"></i>
+		                        <p>Phone: +1(236) *** *** ****
+	                            	<br>Fax: #NobodyUseThis</p>
+		                    </div>
+		                </div>
+
+		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+		                    <div class="contact-item"><i class="icon ion-ios-location"></i>
+		                        <p>Somewhere, over the rainbow,
+		                            <br>Quito, Ec</p>
+		                    </div>
+		                </div>
+
+		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+		                    <div class="contact-item"><i class="icon ion-ios-email"></i>
+		                        <p><a href="mailto:info@cubesquad.org">info@cubesquad.org</a>
+		                        	<br><a href="mailto:pagos@cubesquad.org">pagos@cubesquad.org</a>
+		                        </p>
+		                    </div>
+		                </div>
+
+            		</div> <!-- /. info-contact -->
+
+				</div> <!-- /. center-text -->
+
+			</div> <!-- /. dark-hero -->
+
+			<div class="content-form no-padding-bottom">
+
+		        <!-- START - Contact Form -->
+		    	<form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
+
+		    		<div class="row">
+
+		                <!-- Full name -->
+		                <div class="col-xs-12 col-sm-6 col-lg-6">
+		                    <div class="form-group">
+		                        <input type="text" id="name" class="form form-control" placeholder="Tu Nombre*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tu Nombre*'" name="name" data-name="Name" required>
+		                    </div>
+		                </div>
+
+		                <!-- E-mail -->
+		                <div class="col-xs-12 col-sm-6 col-lg-6">
+		                    <div class="form-group">
+		                        <input type="email" id="email" class="form form-control" placeholder="E-mail*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail*'" name="email-address" data-name="Email Address" required>
+		                    </div>
+		                </div>
+
+		                <!-- Subject -->
+		                <div class="col-xs-12 col-sm-12 col-lg-12">
+		                    <div class="form-group">
+		                        <input type="text" id="subject" class="form form-control" placeholder="Asunto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Asunto'" name="subject" data-name="Subject">
+		                    </div>
+		                </div>
+
+		                <!-- Message -->
+		                <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+		                    <div class="form-group">
+		                        <textarea id="text-area" class="form textarea form-control" placeholder="Escribe tu requerimiento*... 20 caracteres Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Escribe tu requerimiento*... 20 caracteres Min.'" name="message" data-name="Text Area" required></textarea>
+		                    </div>
+		                </div>
+
+		            </div>
+
+		        	<!-- Button submit -->
+		        	<button type="submit" id="valid-form" class="btn btn-color">Enviar</button>
+
+		        </form>
+		        <!-- END - Contact Form -->
+
+		        <!-- !!! Answer for the contact form is displayed in the next div, do not remove it. -->
+		        <div id="block-answer">
+
+					<div id="answer"></div>
+
+				</div>
+
+			</div> <!-- /. content-form -->
+
+			<footer>
+
+				<p>©CubeSquad</p>
+				<p>Do, or do not. There is no try.<i class="fa fa-rebel" aria-hidden="true"></i></p>
+
+			</footer>
+
+		</section>
+		<!-- END - More Informations Part -->
+
+		<!-- Button Cross to close the More Informations/Right Part -->
+		<div class="command-info-wrap">
+
+			<!-- Cross to close -->
+			<button class="to-close">
+				<i class="icon ion-close-round"></i>
+			</button>
+
+			<!-- Arrow going down -->
+			<div class="to-scroll" data-toggle="tooltip" data-placement="left" title="Scroll to see more...">
+				<i class="icon ion-arrow-down-c scroll-down"></i>
+			</div>
+
+		</div> <!-- /. command-info-wrap -->
+
+		<!-- START - Newsletter Popup -->
+		<div id="somedialog" class="dialog">
+
+			<div class="dialog__overlay"></div>
+
+			<div class="dialog__content">
+
+				<div class="dialog-inner">
+
+					<h4>Join the Legend right now!</h4>
+
+					<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+
+					<!-- Newsletter Form -->
+					<div id="subscribe">
+
+		                <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+		                    <div class="form-group">
+
+		                        <div class="controls">
+
+		                        	<!-- Field  -->
+		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+		                        	<!-- Spinner top left during the submission -->
+		                        	<i class="fa fa-spinner opacity-0"></i>
+
+		                            <!-- Button -->
+		                            <button class="btn btn-lg submit">Get notified</button>
+
+		                            <div class="clear"></div>
+
+		                        </div>
+
+		                    </div>
+
+		                </form>
+
+						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+						<div class="block-message">
+
+							<div class="message">
+
+								<p class="notify-valid"></p>
+
+							</div>
+
+						</div>
+
+        			</div>
+        			<!-- /. Newsletter Form -->
+
+				</div>
+				<!-- /. dialog-inner -->
+
+				<!-- Button Cross to close the Newsletter Popup -->
+				<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
+
+			</div>
+			<!-- /. dialog__content -->
+
+		</div>
+		<!-- END - Newsletter Popup -->
+
+		<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		    <!-- Background of PhotoSwipe.
+	        	It's a separate element as animating opacity is faster than rgba(). -->
+		    <div class="pswp__bg"></div>
+
+		    <!-- Slides wrapper with overflow:hidden. -->
+		    <div class="pswp__scroll-wrap">
+
+		        <!-- Container that holds slides.
+		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+		            Don't modify these 3 pswp__item elements, data is added later on. -->
+		        <div class="pswp__container">
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		        </div>
+
+		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		        <div class="pswp__ui pswp__ui--hidden">
+
+		            <div class="pswp__top-bar">
+
+		                <!--  Controls are self-explanatory. Order can be changed. -->
+
+		                <div class="pswp__counter"></div>
+
+		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+		                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+		                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+		                <!-- element will get class pswp__preloader--active when preloader is running -->
+		                <div class="pswp__preloader">
+		                    <div class="pswp__preloader__icn">
+		                      <div class="pswp__preloader__cut">
+		                        <div class="pswp__preloader__donut"></div>
+		                      </div>
+		                    </div>
+		                </div>
+
+		            </div>
+
+		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+		                <div class="pswp__share-tooltip"></div>
+		            </div>
+
+		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+		            </button>
+
+		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+		            </button>
+
+		            <div class="pswp__caption">
+		                <div class="pswp__caption__center"></div>
+		            </div>
+
+		        </div>
+
+		    </div>
+
+		</div>
+		<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
+
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Accelerated JavaScript animation JS file -->
+	<script src="js/velocity.min.js"></script>
+
+	<!-- Accelerated JavaScript animation UI JS file -->
+	<script src="js/velocity.ui.min.js"></script>
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Contact form plugin -->
+	<script src="js/contact-me.js"></script>
+
+	<!-- Slideshow/Image plugin -->
+	<script src="js/vegas.js"></script>
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
+
+	<!-- PhotoSwipe Core JS file -->
+	<script src="js/photoswipe.js"></script>
+
+	<!-- PhotoSwipe UI JS file -->
+	<script src="js/photoswipe-ui-default.js"></script>
+
+	<!-- Constellation effect -->
+	<script src="js/constellation.js"></script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
+</html>
